@@ -19,7 +19,26 @@ class Response {
 
 class Query {
 	public type: string = '(null)';
-	public content: any = {};
+	public data: any = {};
+}
+
+class Translation {
+	public lang: string = 'und';
+	public type: string = '(null)';
+	public translation: string = '(null)';
+}
+
+class Example {
+	public lang: string = 'und';
+	public example: string = '(null)';
+}
+
+class Word {
+	public lang: string = 'und';
+	public word: string = '(null)';
+	public pronunciation: string = '(null)';
+	public translations: Array<Translation> = new Array();
+	public examples: Array<Example> = new Array();
 }
 
 let badRequestResponseString = new Response(403, {}).toString();
@@ -34,7 +53,7 @@ let httpServer = http.createServer((request, response) => {
 httpServer.listen(port);
 
 function isProperRequest(obj: any): obj is Query {
-	return obj && obj.hasOwnProperty("type") && obj.hasOwnProperty("content");
+	return obj && obj.hasOwnProperty("type") && obj.hasOwnProperty("data");
 }
 
 let socket = new server({
