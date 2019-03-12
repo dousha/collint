@@ -1,0 +1,27 @@
+{
+  "name": "collint",
+  "version": "0.0.1",
+  "description": "Online dictionary authoring tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dousha/collint.git"
+  },
+  "author": "dousha",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/dousha/collint/issues"
+  },
+  "homepage": "https://github.com/dousha/collint#readme",
+  "dependencies": {
+    "@types/mongodb": "^3.1.22",
+    "@types/websocket": "0.0.40",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "mongodb": "^3.1.13",
+    "websocket": "^1.0.28"
+  }
+}

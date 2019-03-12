@@ -1,0 +1,10 @@
+{
+	"port": 23333,
+	"mongo": "127.0.0.1",
+	"mongoPort": 27107,
+	"db": "collint",
+	"useAuthorization": false,
+	"auth": "DEFAULT",
+	"username": "",
+	"password": ""
+}
