@@ -29,7 +29,7 @@
 {
 	"type": "c",
 	"data": {
-		"mode": "register",
+		"mode": "user",
 		"name": "UserName",
 		"password": "Plain password"
 	}
@@ -48,7 +48,7 @@
 {
 	"type": "r",
 	"data": {
-		"mode": "login",
+		"mode": "user",
 		"name": "UserName",
 		"password": "Plain password"
 	}
@@ -112,7 +112,7 @@
 	"type": "d",
 	"data": {
 		"mode": "word",
-		"query": "
+		"query": "WordOID"
 	}
 }
 ```

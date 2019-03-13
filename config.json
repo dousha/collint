@@ -6,5 +6,6 @@
 	"useAuthorization": false,
 	"auth": "DEFAULT",
 	"username": "",
-	"password": ""
+	"password": "",
+	"sessionIdle": 300000
 }
